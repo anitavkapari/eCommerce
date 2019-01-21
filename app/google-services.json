@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "642861974040",
+    "firebase_url": "https://ecommerce-c135b.firebaseio.com",
+    "project_id": "ecommerce-c135b",
+    "storage_bucket": "ecommerce-c135b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642861974040:android:0e2792424734961d",
+        "android_client_info": {
+          "package_name": "com.example.dell.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642861974040-c4qv0n63mgtddddmu5t0nm4ck37vskh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.ecommerce",
+            "certificate_hash": "8a27f04127cb33410b8a7c1d522fd3ee190ab9ef"
+          }
+        },
+        {
+          "client_id": "642861974040-ailfdgio4fi7k085kjm545khp7lg4vdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsWLQJQ1j3j1H1kqhHYsLjJT6oJv00kNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642861974040-ailfdgio4fi7k085kjm545khp7lg4vdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
