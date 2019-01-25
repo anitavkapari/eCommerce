@@ -1,4 +1,4 @@
-package com.example.dell.ecommerce;
+package com.example.dell.ecommerce.model;
 
 public class Users
 {

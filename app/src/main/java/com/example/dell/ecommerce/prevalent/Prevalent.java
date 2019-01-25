@@ -1,6 +1,6 @@
 package com.example.dell.ecommerce.prevalent;
 
-import com.example.dell.ecommerce.Users;
+import com.example.dell.ecommerce.model.Users;
 
 public class Prevalent {
     public static Users currentOnlineUser;

@@ -18,9 +18,12 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
         <activity android:name=".AdminCategoryActivity" />
-        <activity android:name=".AdminAddNewProductActivity"></activity>
+        <activity android:name=".AdminAddNewProductActivity" />
     </application>
 
 </manifest>
