@@ -28,7 +28,9 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".ProductdetailActivity"></activity>
+        <activity android:name=".ProductdetailActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".FinalOrderActivity"></activity>
     </application>
 
 </manifest>

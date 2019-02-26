@@ -28,7 +28,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public class ProductdetailActivity extends AppCompatActivity {
-private FloatingActionButton add_product_to_cart;
+private FloatingActionButton fab;
 private ElegantNumberButton number_btn;
 private ImageView product_image_details;
 private TextView product_name,product_description,product_price;
@@ -48,8 +48,8 @@ private TextView product_name,product_description,product_price;
 
         getProductdetails(productID);
 
-        add_product_to_cart =  findViewById(R.id.add_product_to_cart);
-        add_product_to_cart.setOnClickListener(new View.OnClickListener() {
+        fab =  findViewById(R.id.add_product_to_cart);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addingToCartList();
@@ -65,6 +65,7 @@ private TextView product_name,product_description,product_price;
 
         SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss");
         savecurrentTime = currentDate.format(calForDate.getTime());
+
         final DatabaseReference cartlistref = FirebaseDatabase.getInstance().getReference().child("Cart List");
         final HashMap<String, Object> cartmap = new HashMap<>();
         cartmap.put("pid", productID);
@@ -72,7 +73,7 @@ private TextView product_name,product_description,product_price;
         cartmap.put("price", product_price.getText().toString());
         cartmap.put("date", savecurrentDate);
         cartmap.put("time", savecurrentTime);
-        cartmap.put("quntity", number_btn.getNumber());
+        cartmap.put("quantity", number_btn.getNumber());
         cartmap.put("discount", "");
         cartlistref.child("User View").child(Prevalent.currentOnlineUser.getPhone())
                 .child("Products").child(productID)
