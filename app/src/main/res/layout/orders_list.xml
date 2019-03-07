@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        >
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/PhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:layout_below="@+id/PhoneNo."
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/addressCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address,City"
+            android:layout_below="@+id/totalPrice"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date,Time"
+            android:layout_below="@+id/addressCity"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/showAllProducts"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/dateTime"
+            android:background="@color/white"
+            android:text="Show This Order Products"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
