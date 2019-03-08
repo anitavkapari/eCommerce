@@ -75,7 +75,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         TextView userNameTextView = headerView.findViewById(R.id.user_profile_name);
         CircleImageView profileImageView = headerView.findViewById(R.id.user_profile_image);
 
-        userNameTextView.setText(Prevalent.currentOnlineUser.getPhone());
+        userNameTextView.setText(Prevalent.currentOnlineUser.getName());
         Picasso.get().load(Prevalent.currentOnlineUser.getImage()).placeholder(R.drawable.profile).into(profileImageView);
         recyclerView = findViewById(R.id.recycler_menu);
         recyclerView.setHasFixedSize(true);
@@ -140,16 +140,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
-       /* if (id == R.id.action_settings) {
-            return true;
-        }*/
-        return super.onOptionsItemSelected(item);
-    }
+            switch (item.getItemId()) {
+                case R.id.item:
+                    Intent intent = new Intent(this, SearchProductActivity.class);
+                    startActivity(intent);
+                    return true;
+            }
+            return super.onOptionsItemSelected(item);
+        }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -160,8 +159,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (id == R.id.nav_categories) {
 
-        } else if (id == R.id.nav_orders) {
-
+        } else if (id == R.id.nav_search) {
+            Intent intent = new Intent(HomeActivity.this,SearchProductActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_settings) {
             Intent intent = new Intent(HomeActivity.this,SettingsActivity.class);
             startActivity(intent);
